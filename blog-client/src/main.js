@@ -6,11 +6,11 @@ import router from './router'
 import axios from 'axios'
 import Vuetify from 'vuetify'
 // index.js or main.js
-import('../../node_modules/vuetify/dist/vuetify.min.css') // Ensure you are using css-loader
+import('vuetify/dist/vuetify.min.css') // Ensure you are using css-loader
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios.create({
-  baseURL : 'http://localhost:3000'
+  baseURL : 'http://35.197.150.212:3001'
 })
 
 Vue.use(Vuetify)

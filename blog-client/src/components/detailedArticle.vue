@@ -21,7 +21,7 @@ export default {
     methods: {
         getDetailedArticle(id){
           console.log(this.id);
-            axios.get('http://localhost:3000/articles/' + id)
+            axios.get('http://35.197.150.212:3001/articles/' + id)
             .then(resp=>{
               this.article = resp.data.data
               // console.log(resp);

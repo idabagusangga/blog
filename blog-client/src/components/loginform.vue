@@ -22,7 +22,7 @@ export default {
     },
     methods :{
         login(){
-            axios.post('http://localhost:3000/users/login',{
+            axios.post('http://35.197.150.212:3001/users/login',{
                 username: this.username,
                 password: this.password
             })
